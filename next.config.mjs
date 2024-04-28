@@ -16,7 +16,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: `http://49.50.174.146:8080/api/:path*`,
+        destination: `http://${process.env.BASE_URL}/api/:path*`,
       },
     ];
   },
